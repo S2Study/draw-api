@@ -18,10 +18,11 @@ artifact/
 /artifact/**/*.js
 /artifact/**/*.ts
 /artifact/**/*.map
-/lib/**/*.js
-/lib/**/*.map
-/**/src/ts/**/*.js
-/**/src/ts/**/*.map
+lib/
+/src/**/*.js
+/src/**/*.map
+/test/**/*.js
+/test/**/*.map
 *.class
 *.war
 *.swf
