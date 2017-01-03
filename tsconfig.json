@@ -4,12 +4,13 @@
     "module": "commonjs",
     "noImplicitAny": true,
     "declaration":false,
+    "strictNullChecks": true,
     "sourceMap": true,
     "inlineSourceMap":false,
     "inlineSources":true,
     "strictNullChecks":true,
     "jsx": "react",
-    "lib": ["es5", "es2015.promise"]
+    "lib": ["es5", "es2015.promise", "dom"]
   },
   "exclude": [
     "lib",
