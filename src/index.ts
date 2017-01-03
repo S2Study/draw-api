@@ -515,7 +515,7 @@ export namespace history {
 		 * CanvasId毎の変更マッピング。
 		 */
 		getKeys(): ( string | undefined )[];
-		getLayerMoment(key: string): DrawLayerMoment;
+		getLayerMoment(key: string): DrawLayerMoment | null;
 
 		/**
 		 * Canvasの表示順　背面であるほど小さい添字。
@@ -551,14 +551,14 @@ export namespace history {
 		 * Canvas全体の変形成分。
 		 * 変更がある場合は毎回全体上書き。
 		 */
-		getTransform(): Transform;
+		getTransform(): Transform | null;
 
 		/**
 		 * Canvasの切り抜き。
 		 * 変更がある場合は毎回全体上書き。<br />
 		 * 切り抜きしたくない場合はpathの値がnullな空のClipを設定する。
 		 */
-		getClip(): Clip;
+		getClip(): Clip | null;
 
 		/**
 		 * 書き込み履歴（追加分のみ）
