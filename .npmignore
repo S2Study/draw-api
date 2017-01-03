@@ -14,7 +14,8 @@ classes/
 node_modules/
 bin/
 typings
-/**/src/ts/**/*.ts
+src/
+test/
 index.ts
 *.class
 *.war

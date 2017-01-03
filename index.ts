@@ -1,3 +1,5 @@
+import {DrawAPIUtils} from "./src/DrawAPIUtils";
+import {DrawAPIUtilsStatic} from "./src/DrawAPIUtils";
 export namespace editor {
 	export interface Color {
 		r: number;
@@ -1489,3 +1491,5 @@ export namespace viewer {
 		[key: string]: NamedLayer;
 	}
 }
+
+export const DrawUtils: DrawAPIUtilsStatic = DrawAPIUtils;
