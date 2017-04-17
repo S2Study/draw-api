@@ -8,7 +8,6 @@
     "sourceMap": true,
     "inlineSourceMap":false,
     "inlineSources":true,
-    "strictNullChecks":true,
     "jsx": "react",
     "lib": ["es5", "es2015.promise", "dom"]
   },
