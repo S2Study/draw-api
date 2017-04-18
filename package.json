@@ -8,13 +8,15 @@
     "precompile": "node_modules/.bin/tslint index.ts",
     "compile": "node_modules/.bin/gulp compile",
     "prepublish": "npm run compile",
-    "test": "node_modules/.bin/gulp test"
+    "test": "node_modules/.bin/gulp test",
+    "codecov": "node_modules/.bin/codecov -f coverage/coverage-remap.json --token=2623f0e2-0c63-4f1e-bc31-d6f746e12ced"
   },
   "author": "Y.Saito , T.Suzuki",
   "license": "MIT",
   "devDependencies": {
     "@types/mocha": "^2.2.35",
     "@types/power-assert": "^1.4.29",
+    "codecov": "^2.1.0",
     "gulp": "^3.9.1",
     "gulp-istanbul": "^1.1.1",
     "gulp-mocha": "^3.0.1",

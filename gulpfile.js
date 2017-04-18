@@ -38,9 +38,10 @@ function remapCoverageFiles() {
 	return gulp.src('./coverage/coverage-final.json')
 		.pipe(remapIstanbul({
 			reports: {
-				'html': './coverage/report',
-				'text-summary': null,
-				'lcovonly': './coverage/lcov.info'
+				'json': './coverage/coverage-remap.json',
+				// 'html': './coverage/report',
+				// 'text-summary': null,
+				// 'lcovonly': './coverage/lcov.info'
 			}
 		}));
 }
