@@ -1,4 +1,4 @@
-import {structures} from "../index";
+import {structures} from "../DrawAPI";
 import Layer = structures.Layer;
 import {DrawAPIUtils} from "../DrawAPIUtils";
 import {TRANSFORM_DEFAULT, TransformFactory} from "./Transform";

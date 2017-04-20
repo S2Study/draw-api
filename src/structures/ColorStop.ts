@@ -1,6 +1,6 @@
 import ColorStop = structures.ColorStop;
 import {DrawAPIUtils} from "../DrawAPIUtils";
-import {structures} from "../index";
+import {structures} from "../DrawAPI";
 class ColorStopImpl implements ColorStop {
 
 	offset: number;

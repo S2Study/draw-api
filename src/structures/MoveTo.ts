@@ -1,5 +1,5 @@
 import {DrawAPIUtils} from "../DrawAPIUtils";
-import {structures} from "../index";
+import {structures} from "../DrawAPI";
 import MoveTo = structures.MoveTo;
 import PathItem = structures.PathItem;
 

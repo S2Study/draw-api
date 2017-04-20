@@ -1,4 +1,4 @@
-import {structures} from "../index";
+import {structures} from "../DrawAPI";
 import {DrawAPIUtils} from "../DrawAPIUtils";
 import Transform = structures.Transform;
 

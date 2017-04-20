@@ -1,6 +1,6 @@
 import {DrawAPIUtils} from "../DrawAPIUtils";
 import LineTo = structures.LineTo;
-import {structures} from "../index";
+import {structures} from "../DrawAPI";
 import PathItem = structures.PathItem;
 class LineToImpl implements PathItem, LineTo {
 

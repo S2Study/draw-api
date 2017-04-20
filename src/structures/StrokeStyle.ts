@@ -1,5 +1,5 @@
 import {DrawAPIUtils} from "../DrawAPIUtils";
-import {structures} from "../index";
+import {structures} from "../DrawAPI";
 import StrokeStyle = structures.StrokeStyle;
 
 const EMPTY: any = {};

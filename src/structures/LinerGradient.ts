@@ -1,5 +1,5 @@
 import {DrawAPIUtils} from "../DrawAPIUtils";
-import {structures} from "../index";
+import {structures} from "../DrawAPI";
 import {ColorStopFactory} from "./ColorStop";
 import LinerGradient = structures.LinerGradient;
 import ColorStop = structures.ColorStop;

@@ -1,6 +1,6 @@
 import {DrawAPIUtils} from "../DrawAPIUtils";
 import BezierCurveTo = structures.BezierCurveTo;
-import {structures} from "../index";
+import {structures} from "../DrawAPI";
 import PathItem = structures.PathItem;
 class BezierCurveToImpl implements PathItem, BezierCurveTo {
 

@@ -1,5 +1,5 @@
 import {DrawAPIUtils} from "../DrawAPIUtils";
-import {structures} from "../index";
+import {structures} from "../DrawAPI";
 import TextDraw = structures.TextDraw;
 import {TextFactory} from "./Text";
 import Text = structures.Text;

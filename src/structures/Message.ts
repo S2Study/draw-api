@@ -1,4 +1,4 @@
-import {structures} from "../index";
+import {structures} from "../DrawAPI";
 import Message = structures.Message;
 import {DrawAPIUtils} from "../DrawAPIUtils";
 import Layer = structures.Layer;

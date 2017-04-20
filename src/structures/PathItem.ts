@@ -3,7 +3,7 @@ import {ArcToFactory} from "./ArcTo";
 import {MoveToFactory} from "./MoveTo";
 import {QuadraticCurveToFactory} from "./QuadraticCurveTo";
 import {LineToFactory} from "./LineTo";
-import {structures} from "../index";
+import {structures} from "../DrawAPI";
 import PathItem = structures.PathItem;
 import {BezierCurveToFactory} from "./BezierCurveTo";
 import PointInfo = structures.PointInfo;

@@ -1,4 +1,4 @@
-import {structures} from "../index";
+import {structures} from "../DrawAPI";
 import Clip = structures.Clip;
 import {PathItemsFactory, PathItemsUtil} from "./PathItem";
 import {DrawAPIUtils} from "../DrawAPIUtils";

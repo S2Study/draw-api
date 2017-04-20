@@ -1,5 +1,5 @@
 import {DrawAPIUtils} from "../DrawAPIUtils";
-import {structures} from "../index";
+import {structures} from "../DrawAPI";
 import Fill = structures.Fill;
 import Stroke = structures.Stroke;
 import Text = structures.Text;

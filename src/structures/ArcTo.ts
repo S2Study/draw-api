@@ -1,8 +1,8 @@
 import {DrawAPIUtils} from "../DrawAPIUtils";
-import {structures} from "../index";
 import ArcTo = structures.ArcTo;
 import PathItem = structures.PathItem;
 import PointInfo = structures.PointInfo;
+import {structures} from "../DrawAPI";
 
 class ArcToImpl implements PathItem, ArcTo {
 
