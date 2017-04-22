@@ -17,19 +17,10 @@ class ClipImpl implements Clip {
 	}
 
 	toJSON(): any {
-
 		const json: any = {};
-		if (
-			this.transform.a !== 1
-		||	this.transform.b !== 0
-		||	this.transform.c !== 0
-		||	this.transform.d !== 1
-		||	this.transform.x !== 0
-		||	this.transform.y !== 0
-		) {
+		if (!this.transform.isDefault) {
 			json.transform = this.transform.toJSON();
 		}
-
 		if (this.path.length !== 0) {
 			json.path = PathItemsUtil.toArray(this.path);
 		}

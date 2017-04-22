@@ -24,7 +24,7 @@ describe("Messageのテスト", () => {
 				"cc"
 			);
 			it("canvasが反映されていること。", () => {
-				assert(data.canvas[0].transform.a === 5);
+				assert(data.canvas[0].transform.x === 5);
 			});
 			it("idが反映されていること。", () => {
 				assert(data.id === "aa");
@@ -135,7 +135,7 @@ describe("Messageのテスト", () => {
 				title: "cc"
 			});
 			it("canvasが反映されていること。", () => {
-				assert(data.canvas[0].transform.a === 5);
+				assert(data.canvas[0].transform.x === 5);
 			});
 			it("idが反映されていること。", () => {
 				assert(data.id === "aa");

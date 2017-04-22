@@ -312,6 +312,7 @@ export namespace structures {
 		readonly d: number;
 		readonly x: number;
 		readonly y: number;
+		readonly isDefault: boolean;
 	}
 	export interface Clip extends StructuresItem {
 		readonly transform: Transform;

@@ -24,7 +24,7 @@ describe("TextDrawのテスト", () => {
 				assert(data.text.text === "bbb");
 			});
 			it("transformが反映されていること。", () => {
-				assert(data.transform.a === 5);
+				assert(data.transform.x === 5);
 			});
 			it("compositeOperationが反映されていること。", () => {
 				assert(data.compositeOperation === 3);
@@ -96,7 +96,7 @@ describe("TextDrawのテスト", () => {
 				assert(data.text.text === "bbb");
 			});
 			it("transformが反映されていること。", () => {
-				assert(data.transform.a === 5);
+				assert(data.transform.x === 5);
 			});
 			it("compositeOperationが反映されていること。", () => {
 				assert(data.compositeOperation === 3);

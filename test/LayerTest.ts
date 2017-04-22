@@ -18,13 +18,13 @@ describe("Layerのテスト", () => {
 				ClipFactory.createInstance([], TransformFactory.createInstance(5))
 			);
 			it("drawsが反映されていること。", () => {
-				assert((<GraphicsDraw>data.draws[0]).transform.a === 3);
+				assert((<GraphicsDraw>data.draws[0]).transform.x === 3);
 			});
 			it("transformが反映されていること。", () => {
-				assert(data.transform.a === 4);
+				assert(data.transform.x === 4);
 			});
 			it("clipが反映されていること。", () => {
-				assert(data.clip!.transform.a === 5);
+				assert(data.clip!.transform.x === 5);
 			});
 		});
 
@@ -90,13 +90,13 @@ describe("Layerのテスト", () => {
 				clip: ClipFactory.createInstance([], TransformFactory.createInstance(5).toJSON())
 			});
 			it("drawsが反映されていること。", () => {
-				assert((<GraphicsDraw>data.draws[0]).transform.a === 3);
+				assert((<GraphicsDraw>data.draws[0]).transform.x === 3);
 			});
 			it("transformが反映されていること。", () => {
-				assert(data.transform.a === 4);
+				assert(data.transform.x === 4);
 			});
 			it("clipが反映されていること。", () => {
-				assert(data.clip!.transform.a === 5);
+				assert(data.clip!.transform.x === 5);
 			});
 		});
 

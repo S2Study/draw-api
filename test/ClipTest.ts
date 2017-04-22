@@ -1,9 +1,4 @@
 import * as assert from "power-assert";
-import {StrokeFactory} from "../src/structures/Stroke";
-import {FillFactory} from "../src/structures/Fill";
-import {DashFactory} from "../src/structures/Dash";
-import {StrokeStyleFactory} from "../src/structures/StrokeStyle";
-import {GraphicFactory} from "../src/structures/Graphic";
 import {structures} from "../src/index";
 import Stroke = structures.Stroke;
 import {MoveToFactory} from "../src/structures/MoveTo";
@@ -24,7 +19,7 @@ describe("Clipのテスト", () => {
 				assert(data.path[0].type === 0);
 			});
 			it("transformが反映されていること。", () => {
-				assert(data.transform.a === 2);
+				assert(data.transform.x === 2);
 			});
 		});
 
@@ -81,7 +76,7 @@ describe("Clipのテスト", () => {
 				assert(data.path[0].type === 0);
 			});
 			it("transformが反映されていること。", () => {
-				assert(data.transform.a === 2);
+				assert(data.transform.x === 2);
 			});
 		});
 

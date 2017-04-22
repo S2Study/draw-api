@@ -23,14 +23,7 @@ class LayerImpl implements Layer {
 	toJSON(): any {
 
 		const json: any = {};
-		if (
-			this.transform.x !== 0
-		||	this.transform.y !== 0
-		||	this.transform.a !== 1
-		||	this.transform.b !== 0
-		||	this.transform.c !== 0
-		||	this.transform.d !== 1
-		) {
+		if (!this.transform.isDefault) {
 			json.transform = this.transform.toJSON();
 		}
 		if (this.draws.length !== 0) {

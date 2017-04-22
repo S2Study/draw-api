@@ -30,14 +30,7 @@ class GraphicsDrawImpl implements GraphicsDraw {
 		}
 
 		const transform = this.transform;
-		if (
-			transform.x !== 0
-		||	transform.y !== 0
-		||	transform.a !== 1
-		||	transform.b !== 0
-		||	transform.c !== 0
-		||	transform.d !== 1
-		) {
+		if (!transform.isDefault) {
 			json.transform = this.transform.toJSON();
 		}
 

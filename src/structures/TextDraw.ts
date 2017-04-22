@@ -29,14 +29,7 @@ export class TextDrawImpl implements TextDraw {
 			json.text = this.text.toJSON();
 		}
 		const transform = this.transform;
-		if (
-			transform.a !== 1
-		||	transform.b !== 0
-		||	transform.c !== 0
-		||	transform.d !== 1
-		||	transform.x !== 0
-		||	transform.y !== 0
-		) {
+		if (!transform.isDefault) {
 			json.transform = this.transform.toJSON();
 		}
 		if (this.compositeOperation !== 0) {

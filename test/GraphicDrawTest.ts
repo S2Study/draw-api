@@ -25,7 +25,7 @@ describe("GraphicDrawのテスト", () => {
 				assert(data.compositeOperation === 3);
 			});
 			it("transformが反映されていること。", () => {
-				assert(data.transform.a === 2);
+				assert(data.transform.x === 2);
 			});
 			it("graphicsが反映されていること。", () => {
 				assert(data.graphics[0]!.fill!.color === 0x33);
@@ -96,7 +96,7 @@ describe("GraphicDrawのテスト", () => {
 				assert(data.compositeOperation === 3);
 			});
 			it("transformが反映されていること。", () => {
-				assert(data.transform.a === 2);
+				assert(data.transform.x === 2);
 			});
 			it("graphicsが反映されていること。", () => {
 				assert(data.graphics[0]!.fill!.color === 0x33);

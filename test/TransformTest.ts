@@ -10,23 +10,23 @@ describe("Transformのテスト", () => {
 			const data =  TransformFactory.createInstance(
 				2, 3, 4, 5, 6, 7
 			);
-			it("aが設定されていること。", () => {
-				assert(data.a === 2);
-			});
-			it("bが設定されていること。", () => {
-				assert(data.b === 3);
-			});
-			it("cが設定されていること。", () => {
-				assert(data.c === 4);
-			});
-			it("dが設定されていること。", () => {
-				assert(data.d === 5);
-			});
 			it("xが設定されていること。", () => {
-				assert(data.x === 6);
+				assert(data.x === 2);
 			});
 			it("yが設定されていること。", () => {
-				assert(data.y === 7);
+				assert(data.y === 3);
+			});
+			it("aが設定されていること。", () => {
+				assert(data.a === 4);
+			});
+			it("bが設定されていること。", () => {
+				assert(data.b === 5);
+			});
+			it("cが設定されていること。", () => {
+				assert(data.c === 6);
+			});
+			it("dが設定されていること。", () => {
+				assert(data.d === 7);
 			});
 		});
 
@@ -60,22 +60,22 @@ describe("Transformのテスト", () => {
 			const data =  TransformFactory.createInstance(
 				2, 3, 4, 5, 6, 7
 			).toJSON();
-			it("aが設定されていること。", () => {
+			it("xが設定されていること。", () => {
 				assert(data[0] === 2);
 			});
-			it("bが設定されていること。", () => {
+			it("yが設定されていること。", () => {
 				assert(data[1] === 3);
 			});
-			it("cが設定されていること。", () => {
+			it("aが設定されていること。", () => {
 				assert(data[2] === 4);
 			});
-			it("dが設定されていること。", () => {
+			it("bが設定されていること。", () => {
 				assert(data[3] === 5);
 			});
-			it("xが設定されていること。", () => {
+			it("cが設定されていること。", () => {
 				assert(data[4] === 6);
 			});
-			it("yが設定されていること。", () => {
+			it("dが設定されていること。", () => {
 				assert(data[5] === 7);
 			});
 		});
@@ -87,60 +87,60 @@ describe("Transformのテスト", () => {
 				assert(json.length === 0);
 			});
 		});
-		describe("yが0", () => {
+		describe("dが1", () => {
 
 			const json = TransformFactory.createInstance(
-				1, 0, 0, 1, 1, 0
+				0, 0, 1, 0, 2, 1
 			).toJSON();
 
 			it("長さ5の配列が返る。", () => {
 				assert(json.length === 5);
 			});
 		});
-		describe("yとxが0", () => {
+		describe("dが1,cが0", () => {
 
 			const json = TransformFactory.createInstance(
-				1, 0, 0, 3, 0, 0
+				0, 0, 1, 3, 0, 1
 			).toJSON();
 
 			it("長さ4の配列が返る。", () => {
 				assert(json.length === 4);
 			});
 		});
-		describe("yとxが0,dが1", () => {
+		describe("dが1,cが0,bが0", () => {
 
 			const json = TransformFactory.createInstance(
-				1, 0, 2, 1, 0, 0
+				0, 0, 3, 0, 0, 1
 			).toJSON();
 
 			it("長さ3の配列が返る。", () => {
 				assert(json.length === 3);
 			});
 		});
-		describe("yとxが0,dが1,cが0", () => {
+		describe("dが1,cが0,bが0,aが1", () => {
 
 			const json = TransformFactory.createInstance(
-				1, 3, 0, 1, 0, 0
+				0, 3, 1, 0, 0, 1
 			).toJSON();
 
 			it("長さ2の配列が返る。", () => {
 				assert(json.length === 2);
 			});
 		});
-		describe("yとxが0,dが1,cが0,bが0", () => {
+		describe("dが1,cが0,bが0,aが1,yが0", () => {
 
 			const json = TransformFactory.createInstance(
-				3, 0, 0, 1, 0, 0
+				2, 0, 1, 0, 0, 1
 			).toJSON();
 
 			it("長さ1の配列が返る。", () => {
 				assert(json.length === 1);
 			});
 		});
-		describe("yとxが0,dが1,cが0,bが0,aが1", () => {
+		describe("dが1,cが0,bが0,aが1,yが0,xが0", () => {
 
 			const json = TransformFactory.createInstance(
-				1, 0, 0, 1, 0, 0
+				0, 0, 1, 0, 0, 1
 			).toJSON();
 
 			it("長さ0の配列が返る。", () => {
@@ -154,23 +154,23 @@ describe("Transformのテスト", () => {
 			const data = TransformFactory.fromJSON([
 				2, 3, 4, 5, 6, 7
 			]);
-			it("aが設定されていること。", () => {
-				assert(data.a === 2);
-			});
-			it("bが設定されていること。", () => {
-				assert(data.b === 3);
-			});
-			it("cが設定されていること。", () => {
-				assert(data.c === 4);
-			});
-			it("dが設定されていること。", () => {
-				assert(data.d === 5);
-			});
 			it("xが設定されていること。", () => {
-				assert(data.x === 6);
+				assert(data.x === 2);
 			});
 			it("yが設定されていること。", () => {
-				assert(data.y === 7);
+				assert(data.y === 3);
+			});
+			it("aが設定されていること。", () => {
+				assert(data.a === 4);
+			});
+			it("bが設定されていること。", () => {
+				assert(data.b === 5);
+			});
+			it("cが設定されていること。", () => {
+				assert(data.c === 6);
+			});
+			it("dが設定されていること。", () => {
+				assert(data.d === 7);
 			});
 		});
 
