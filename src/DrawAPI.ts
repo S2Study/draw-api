@@ -1,9 +1,11 @@
 export namespace history {
+
 	import Message = structures.Message;
 	import Layer = structures.Layer;
 	import Transform = structures.Transform;
 	import Clip = structures.Clip;
 	import Draw = structures.Draw;
+
 	export interface DrawHistory {
 
 		/**

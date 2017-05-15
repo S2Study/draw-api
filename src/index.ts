@@ -1131,7 +1131,7 @@ import {ColorStopFactoryStatic} from "./structures/ColorStop";
 
 export const DrawUtils: DrawAPIUtilsStatic = DrawAPIUtils;
 
-export const DrawAPIStatic = {
+export const Factories = {
 	ArcTo: new ArcToFactoryStatic(),
 	BezierCurveTo: new BezierCurveToFactoryStatic(),
 	Clip: new ClipFactoryStatic(),
@@ -1154,4 +1154,4 @@ export const DrawAPIStatic = {
 	Transform: new TransformFactoryStatic(),
 	Utils: DrawAPIUtils
 };
-export default DrawAPIStatic;
+export default Factories;
