@@ -149,7 +149,7 @@ export namespace history {
 		 * Canvasの表示順　背面であるほど小さい添字。
 		 * 更新される毎に全件分設定され、ここにないCanvasは削除扱いとする。
 		 */
-		getSequence(): string[];
+		getSequence(): string[] | null;
 	}
 
 	export interface DrawLayerMomentBuilder {
